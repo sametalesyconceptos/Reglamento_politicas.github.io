@@ -3,13 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión Documental</title>
+    <title>Reglamentos y Politicas</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f6f8;
+       body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f4f6f8;
+        position: relative;
+        }
+
+        body::before {
+        content: "";
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        height: 200px;
+        background-image: url('Logo_MetalCon.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 0.07;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        z-index: 0;
         }
 
         h1 {
