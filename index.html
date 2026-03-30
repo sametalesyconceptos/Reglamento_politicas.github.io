@@ -2,43 +2,80 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestión Documental</title>
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 40px;
+            margin: 20px;
             background-color: #f4f6f8;
         }
 
         h1 {
             text-align: center;
+            font-size: 24px;
         }
 
         h2 {
             color: #2c3e50;
             border-bottom: 2px solid #ccc;
             padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
         }
 
         .documento {
             background: #ffffff;
             padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
+            border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .documento h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
         }
 
         a {
+            display: inline-block;
             text-decoration: none;
             color: white;
             background-color: #3498db;
-            padding: 8px 12px;
-            border-radius: 5px;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 14px;
         }
 
         a:hover {
             background-color: #2980b9;
+        }
+
+        /* 📱 Responsive para celulares */
+        @media (max-width: 480px) {
+            body {
+                margin: 10px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            .documento h3 {
+                font-size: 14px;
+            }
+
+            a {
+                width: 100%;
+                padding: 12px;
+                font-size: 15px;
+            }
         }
     </style>
 </head>
@@ -47,30 +84,81 @@
 
     <h1>Gestión Documental</h1>
 
-    <!-- REGLAMENTO -->
-    <h2>Reglamento</h2>
+    <!-- REGLAMENTOS -->
+    <h2>Reglamentos</h2>
 
-    <div class="documento">
-        <h3>Reglamento Interno de Trabajo</h3>
-        <a href="Reglamento Interno de Trabajo (RIT).pdf" target="_blank">Abrir documento</a>
-    </div>
+    <div class="contenedor">
 
-    <div class="documento">
-        <h3>Reglamento de Higiene y Seguridad</h3>
-        <a href="Reglamento de Higiene y seguridad Industrial.pdf" target="_blank">Abrir documento</a>
+        <div class="documento">
+            <h3>Reglamento Interno de Trabajo</h3>
+            <a href="Reglamento%20Interno%20de%20Trabajo%20(RIT).pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
+        <div class="documento">
+            <h3>Reglamento de Higiene y Seguridad</h3>
+            <a href="Reglamento%20de%20Higiene%20y%20seguridad%20Industrial.pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
     </div>
 
     <!-- POLITICAS -->
     <h2>Políticas</h2>
 
-    <div class="documento">
-        <h3>Política de Protección de Datos</h3>
-        <a href="" target="_blank">Abrir documento</a>
-    </div>
+    <div class="contenedor">
 
-    <div class="documento">
-        <h3>Política de Seguridad y Salud en el Trabajo</h3>
-        <a href="" target="_blank">Abrir documento</a>
+        <div class="documento">
+            <h3>Prevención del Acoso Sexual</h3>
+            <a href="Politica%20prevencion%20del%20Acoso%20Sexual%20en%20el%20%C3%A1mbito%20laboral.pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
+        <div class="documento">
+            <h3>Prevención del Acoso Laboral</h3>
+            <a href="Politica%20deprevencion%20del%20Acoso%20Laboral.pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
+        <div class="documento">
+            <h3>Prevención SPA</h3>
+            <a href="Politica%20de%20prevenci%C3%B3n%20SPA.pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
+        <div class="documento">
+            <h3>Tratamiento de Datos</h3>
+            <a href="Politica%20de%20Tratamiento%20de%20Datos.pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
+        <div class="documento">
+            <h3>Seguridad y Salud en el Trabajo (SST)</h3>
+            <a href="Politica%20de%20SST.pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
+        <div class="documento">
+            <h3>Desconexión Laboral</h3>
+            <a href="Politica%20de%20Desconexion%20Laboral.pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
+        <div class="documento">
+            <h3>Contra el Acoso y la Discriminación</h3>
+            <a href="Politica%20contra%20el%20Acoso%20y%20la%20Discriminaci%C3%B3n.pdf" target="_blank">
+                Abrir documento
+            </a>
+        </div>
+
     </div>
 
 </body>
